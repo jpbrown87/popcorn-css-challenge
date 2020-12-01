@@ -10,18 +10,52 @@ function learnMoreFn() {
     var alertM = "My Partner and I are good pair."
     alert(alertM)
 }
+
+
+
 document.getElementById('buttonGroupRate').addEventListener('click', showRates)
 function showRates(){
+    //document.getElementById('groupRate').style.display = "none";
     let groupRateCard = document.getElementById('groupRate');
-    if(groupRateCard.style.display = "block"){
+    if(groupRateCard.style.display == "block"){
         groupRateCard.style.display = "none"
-    }else if(roupRateCard.style.display = "none"){
+    }else{
         groupRateCard.style.display = "block"
     }
 }
-// do you see what i am talking about
 
-// this should work but i am going to push it in github so you can have the file
+document.getElementById('letgo').addEventListener('click', letgoForm)
+function letgoForm(){
+    let displayForm = document.getElementById('letsgoForm');
+    if(displayForm.style.display == "block"){
+        displayForm.style.display = "none";
+    }else{
+        displayForm.style.display = "block";
+    }
+}
+
+
+
+document.getElementById('submit').addEventListener('click', submitForm);
+function submitForm(){
+    var firstName = document.getElementById('firstname').value;
+    var lastName = document.getElementById('lastname').value;
+    var city;
+    if(document.getElementById('cities').value == "San Juan"){
+        city = 'San Juan';
+    }else if(document.getElementById('cities').value == "Bayamon"){
+        city = 'Bayamon';
+    }else if(document.getElementById('cities').value == "Carolina"){
+        city = 'Carolina';
+    }else if(document.getElementById('cities').value == "Ponce"){
+        city = 'Ponce';
+    }else if(document.getElementById('cities').value == "Caguas"){
+        city = 'Caguas';
+    }
+
+    alert(`First Name: ${firstName}\nLast Name: ${lastName}\nCity: ${city}`);
+    
+}
 
 
 

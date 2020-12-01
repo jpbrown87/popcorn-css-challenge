@@ -70,9 +70,6 @@
     margin-left:5%;
   }
   .group-rate{
-   display: none;   
-   background-color: blue;
-   width: 100px;
-   height: 30px;
+   display: none;
    justify-content: center;
   }

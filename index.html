@@ -19,8 +19,9 @@
       <div class="card">
         <h3>Flights</h3>
         <p>Come check out or sweet flights! Direct flights available daily!</p>
-        <button>Lets go</button>
+        <button id="letgo">Lets go</button>
       </div>
+
       <div class="card">
         <h3>Group Trips</h3>
         <p>We offer great group rates! For families with 4 members to huge gatherings with 50+!</p>
@@ -31,9 +32,34 @@
         <p>Discount flights available for individuals! Single chair filler tickets for low rates!</p>
         <button id="jump-in">Jump in</button>
       </div><br />
-      <div id="groupRate" class="card group-rate">
-                <p>filler text</p>
+      <div id="groupRate" class="card group-rate" style="display: none;">
+                <h3>Group Rates</h3>
+                <ul>
+                  <li>$5000 for 2 adult and a child under 16</li>
+                  <li>$8000 for 3 adult and a child under 16</li>
+                  <li>$11000 for 4 adult and a child under 16</li>
+                  <li>$15000 for 5 adult and a child under 16</li>
+                </ul>
       </div>
+
+
+      <section id="letsgoForm" class="card letsgoAway" style="display: none;">
+        <h3>Information Form</h3>
+        <form>
+          <input type="text" id="firstname" placeholder="Enter First Name" />
+          <input type="text" id="lastname" placeholder="Enter Last Name" /><br /><br />
+          <select name="selectCity" id="cities" style="width: 310px; text-align-last:center;">
+            <option value="selector">---Cities--</option>
+            <option value="San Juan">San Juan</option>
+            <option value="Bayamon">Bayamon</option>
+            <option value="Carolina">Carolina</option>
+            <option value="Ponce">Ponce</option>
+            <option value="Caguas">Caguas</option>
+          </select>
+          <button id="submit">Book it</button>
+        </form>
+      </section>
+
       <div class="card large-card">
         <h3>About us</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
